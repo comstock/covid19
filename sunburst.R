@@ -60,4 +60,26 @@ df.us <- df.covid %>%
   select(-Lat) %>%
   select(-Long)
 
+browseURL("https://plot.ly/r/sunburst-charts/")
 
+l <- as.vector(df.us$Province.State) 
+l <- append(l, "US",after = 0)
+
+p <- as.vector(df.us$Country.Region)
+p <- append(p,"",after = 0)
+
+v <- as.vector(df.us[,3])
+v <- append(v,sum(df.us[,3]),after = 0)
+
+
+# l <-  c("Eve", "Cain", "Seth", "Enos", "Noam", "Abel", "Awan", "Enoch", "Azura")
+# p <- c("", "Eve", "Eve", "Seth", "Seth", "Eve", "Eve", "Awan", "Eve")
+# v <- c(65, 14, 12, 10, 2, 6, 6, 4, 4)
+
+fig <- plot_ly(
+  parents = p,
+  labels =  l,
+  values = v,
+  type = 'sunburst',
+  branchvalues = 'total'
+) ; fig
