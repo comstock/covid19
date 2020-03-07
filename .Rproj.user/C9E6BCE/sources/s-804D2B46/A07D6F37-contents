@@ -90,4 +90,4 @@ git.2 <- "git commit -m `blahblah`"
 
 git.3 <- "git status"
 
-system(git.1) ; system(git.2)
+system(git.1) ; system(git.2) ; system(git.3)
