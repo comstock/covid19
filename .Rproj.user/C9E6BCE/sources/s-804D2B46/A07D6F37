@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1583603110650.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "A07D6F37",
+    "lastKnownWriteTime" : 1583605419,
+    "last_content_update" : 1583605419790,
+    "path" : "~/R/covid19/sunburst.R",
+    "project_path" : "sunburst.R",
+    "properties" : {
+        "cursorPosition" : "17,33",
+        "scrollLine" : "5",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
