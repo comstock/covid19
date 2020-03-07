@@ -7,13 +7,13 @@
     "folds" : "",
     "hash" : "0",
     "id" : "A07D6F37",
-    "lastKnownWriteTime" : 1583609422,
-    "last_content_update" : 1583609824340,
+    "lastKnownWriteTime" : 1583610094,
+    "last_content_update" : 1583610125781,
     "path" : "~/R/covid19/sunburst.R",
     "project_path" : "sunburst.R",
     "properties" : {
-        "cursorPosition" : "91,0",
-        "scrollLine" : "67",
+        "cursorPosition" : "87,0",
+        "scrollLine" : "63",
         "tempName" : "Untitled1"
     },
     "read_only" : false,

@@ -83,3 +83,13 @@ fig <- plot_ly(
   type = 'sunburst',
   branchvalues = 'total'
 ) ; fig
+
+
+git.1 <- "git add --all"
+git.2 <- "git commit"
+git.commit.msg <- "'misc'"
+git.commit.msg <- ""
+git.2 <- paste(git.2,git.coblammit.msg,sep=" ");git.2
+git.3 <- "git status"
+
+system(git.1) ; system(git.2)
