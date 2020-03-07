@@ -60,7 +60,7 @@ df.us <- df.covid %>%
   select(-Lat) %>%
   select(-Long)
 
-browseURL("https://plot.ly/r/sunburst-charts/")
+# browseURL("https://plot.ly/r/sunburst-charts/")
 
 l <- as.vector(df.us$Province.State) 
 l <- append(l, "US",after = 0)

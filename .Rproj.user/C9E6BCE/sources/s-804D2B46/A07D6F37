@@ -5,14 +5,14 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "2138051766",
+    "hash" : "834735544",
     "id" : "A07D6F37",
-    "lastKnownWriteTime" : 1583607193,
-    "last_content_update" : 1583607193516,
+    "lastKnownWriteTime" : 1583609422,
+    "last_content_update" : 1583609422043,
     "path" : "~/R/covid19/sunburst.R",
     "project_path" : "sunburst.R",
     "properties" : {
-        "cursorPosition" : "85,0",
+        "cursorPosition" : "62,49",
         "scrollLine" : "58",
         "tempName" : "Untitled1"
     },
