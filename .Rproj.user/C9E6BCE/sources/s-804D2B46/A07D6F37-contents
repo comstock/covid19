@@ -86,7 +86,7 @@ fig <- plot_ly(
 
 
 git.1 <- "git add --all"
-git.2 <- "git commit -m 'blahblah'"
+git.2 <- "git commit -m `blahblah`"
 
 git.3 <- "git status"
 
