@@ -87,7 +87,7 @@ fig <- plot_ly(
 
 git.1 <- "git add --all"
 git.2 <- "git commit -m"
-git.commit.msg <- "\"misc\""
+git.commit.msg <- "'misc'"
 git.2 <- paste(git.2,git.commit.msg,sep=" ");git.2
 git.3 <- "git status"
 
