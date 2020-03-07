@@ -86,7 +86,10 @@ fig <- plot_ly(
 
 
 git.1 <- "git add --all"
-git.2 <- "git commit -m `blahblah`"
+git.tmp <- "git commit -m"
+git.commit.msg <- readline(prompt="Enter commit message: ")
+invisible(readline(prompt="Press [enter] to continue"))
+git.2 <- paste(git.tmp,git.commit.msg,sep = " ")
 git.3 <- "git status"
 git.4 <- "git push origin master"
 
