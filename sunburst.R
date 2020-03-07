@@ -86,10 +86,8 @@ fig <- plot_ly(
 
 
 git.1 <- "git add --all"
-git.2 <- "git commit"
-git.commit.msg <- "'misc'"
-git.commit.msg <- ""
-git.2 <- paste(git.2,git.coblammit.msg,sep=" ");git.2
+git.2 <- "git commit -m `blahblah`"
 git.3 <- "git status"
+git.4 <- "git push origin master"
 
-system(git.1) ; system(git.2)
+system(git.1) ; system(git.2) ; system(git.3) ; system(git.4)
