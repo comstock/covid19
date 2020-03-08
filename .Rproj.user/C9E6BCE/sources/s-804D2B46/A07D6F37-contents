@@ -52,6 +52,7 @@ colnames(df.covid) <- cnames
 
 df.mass <- df.covid %>%
   filter(Country.Region == "US") %>%
+  select(-(6:last.day.rec.num - 1)) %>%
   filter(grepl("MA$",Province.State,ignore.case = FALSE) == TRUE)
 
 df.us <- df.covid %>%
@@ -85,12 +86,37 @@ fig <- plot_ly(
 ) ; fig
 
 
-git.1 <- "git add --all"
-git.tmp <- "git commit -m"
-git.commit.msg <- readline(prompt="Enter commit message: ")
-invisible(readline(prompt="Press [enter] to continue"))
-git.2 <- paste(git.tmp,git.commit.msg,sep = " ")
-git.3 <- "git status"
-git.4 <- "git push origin master"
+##
 
-system(git.1) ; system(git.2) ; system(git.3) ; system(git.4)
+# df.us["State"] <- gsub(".*,.([A-Z]{2}).*","\\1",df.us$Province.State)
+# 
+# p <- as.vector(df.us$State)
+# p <- append(p,"",after = 0)
+# 
+# l <- as.vector(df.us$Province.State)
+# l <- append(l, "US" ,after = 0)
+# 
+# v <- as.vector(df.us[,3])
+# v <- append(v,sum(df.us[,3]),after = 0)
+# 
+# 
+# fig <- plot_ly(
+#   parents = p,
+#   labels =  l,
+#   values = v,
+#   type = 'sunburst',
+#   branchvalues = 'total'
+# ) ; fig
+
+##
+
+# git.1 <- "git add --all"
+# git.tmp <- "git commit -m"
+# 
+# git.commit.msg <- readline(prompt="Enter commit message: ")
+# invisible(readline(prompt="Press [enter] to continue"))
+# git.2 <- paste(git.tmp,git.commit.msg,sep = " ")
+# git.3 <- "git status"
+# git.4 <- "git push origin master"
+# 
+# system(git.1) ; system(git.2) ; system(git.3) ; system(git.4)
