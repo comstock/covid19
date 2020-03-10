@@ -70,7 +70,7 @@ p <- as.vector(df.us$Country.Region)
 p <- append(p,"",after = 0)
 
 v <- as.vector(df.us[,3])
-v <- append(v,sum(df.us[,3]),after = 0)
+v <- append(v,sum(df.us[,3],na.rm = TRUE),after = 0)
 
 
 # l <-  c("Eve", "Cain", "Seth", "Enos", "Noam", "Abel", "Awan", "Enoch", "Azura")
